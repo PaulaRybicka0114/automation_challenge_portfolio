@@ -1,0 +1,30 @@
+from pages.base_page import BasePage
+
+
+class Dashboard(BasePage):
+    header_xpath = "//header"
+    main_page_button_xpath = "//*[@id='__next']/div[1]/div/div/div/ul[1]/div[1]"
+    players_button_xpath = "//*[@id='__next']/div[1]/div/div/div/ul[1]/div[2]"
+    changing_language_button_xpath = "//*[@id='__next']/div[1]/div/div/div/ul[2]/div[1]"
+    sign_out_button_xpath = "//*[@id='__next']/div[1]/div/div/div/ul[2]/div[2]"
+    players_count_xpath = "//*[@id='__next']/div[1]/main/div[2]/div[1]"
+    matches_count_xpath = "//*[@id='__next']/div[1]/main/div[2]/div[2]"
+    reports_count_xpath = "//*[@id='__next']/div[1]/main/div[2]/div[3]"
+    events_count_xpath = "//*[@id='__next']/div[1]/main/div[2]/div[4]"
+    scouts_panel_logo_xpath = "//*[@id='__next']/div[1]/main/div[3]/div[1]/div/div[1]"
+    scouts_panel_description_xpath = "//*[@id='__next']/div[1]/main/div[3]/div[1]/div/div[2]"
+    dev_team_contact_button_xpath = "//*[@id='__next']/div[1]/main/div[3]/div[1]/div/div[3]/a"
+    shortcuts_headline_xpath = "//*[@id='__next']/div[1]/main/div[3]/div[2]/div/div/h2"
+    add_player_button_xpath = "//*[@id='__next']/div[1]/main/div[3]/div[2]/div/div/a/button"
+    activity_headline_xpath = "//*[@id='__next']/div[1]/main/div[3]/div[3]/div/div/h2"
+    last_created_player_headline_xpath = "//*[@id='__next']/div[1]/main/div[3]/div[3]/div/div/h6[1]"
+    last_created_player_button_xpath = "//*[@id='__next']/div[1]/main/div[3]/div[3]/div/div/a[1]/button"
+    last_updated_player_headline_xpath = "//*[@id='__next']/div[1]/main/div[3]/div[3]/div/div/h6[2]"
+    last_updated_player_button_xpath = "//*[@id='__next']/div[1]/main/div[3]/div[3]/div/div/a[2]/button"
+    last_created_match_headline_xpath = "//*[@id='__next']/div[1]/main/div[3]/div[3]/div/div/h6[3]"
+    last_created_match_button_xpath = "//*[@id='__next']/div[1]/main/div[3]/div[3]/div/div/a[3]/button"
+    last_updated_match_headline_xpath = "//*[@id='__next']/div[1]/main/div[3]/div[3]/div/div/h6[4]"
+    last_updated_match_button_xpath = "//*[@id='__next']/div[1]/main/div[3]/div[3]/div/div/a[4]/button"
+    last_updated_report_headline_xpath = "//*[@id='__next']/div[1]/main/div[3]/div[3]/div/div/h6[5]"
+    last_updated_report_button_xpath = "//*[@id='__next']/div[1]/main/div[3]/div[3]/div/div/a[5]/button"
+pass
