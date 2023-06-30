@@ -13,3 +13,41 @@ Done. :white_check_mark:
 
 ### Subtask 4 - Get ISTQB purple test
 ![image](https://github.com/PaulaRybicka0114/automation_challenge_portfolio/blob/main/Purple%20test%20score.png?raw=true)
+
+# TASK 2 - Selectors
+
+### Subtask 1 - A new branch
+Done!
+
+### Subtask 2 - Searching for selectors on the login page
+1. Headline "Scouts Panel"
+* //*[@id="__next"]/form/div/div[1]/h5
+* //*[text()="Scouts Panel"]
+* //h5
+2. The "Login" field
+* //*[@id="login-label"]
+* //*[text()="Login"]
+* //*[@id='login']
+3. The "Password" field
+* //*[@id="password-label"]
+* //*[text()="Password"]
+* //*[@id='password']
+4. The "Remind password" button
+* //*[@id="__next"]/form/div/div[1]/a
+* //*[text()="Remind password"]
+* //child::div/a
+5. The "English" button for changing the language
+* //*[@id="__next"]/form/div/div[2]/div
+* //*[text()="English"]
+6. The "Sign in" button
+* //*[@id="__next"]/form/div/div[2]/button
+* //*[text()="Sign in"]
+
+### Subtask 3 - Adding selectors to the project
+Done.
+
+### Subtask 4 - Adding a new file (dashbord)
+Done.
+
+### Subtask 5 - Adding a new file (match form)
+Done.
