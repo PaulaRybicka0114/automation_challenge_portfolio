@@ -44,10 +44,10 @@ Done!
 * //*[text()="Sign in"]
 
 ### Subtask 3 - Adding selectors to the project
-Done.
+Done, as you can check in in the files. :wink:
 
 ### Subtask 4 - Adding a new file (dashbord)
-Done.
+Same here. :white_check_mark:
 
 ### Subtask 5 - Adding a new file (match form)
-Done.
+And here. :white_check_mark:
