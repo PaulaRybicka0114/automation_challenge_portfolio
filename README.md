@@ -20,28 +20,30 @@ Done. :white_check_mark:
 Done!
 
 ### Subtask 2 - Searching for selectors on the login page
-1. Headline "Scouts Panel"
+1. headline_xpath
 * //*[@id="__next"]/form/div/div[1]/h5
 * //*[text()="Scouts Panel"]
 * //h5
-2. The "Login" field
-* //*[@id="login-label"]
+2. login_field_xpath
+* //*[@name="login"]
 * //*[text()="Login"]
 * //*[@id='login']
-3. The "Password" field
-* //*[@id="password-label"]
+3. password_field_xpath
+* //*[contains(@type,"password")]
 * //*[text()="Password"]
 * //*[@id='password']
-4. The "Remind password" button
+4. remind_password_button_xpath
 * //*[@id="__next"]/form/div/div[1]/a
 * //*[text()="Remind password"]
 * //child::div/a
-5. The "English" button for changing the language
+5. change_language_button_xpath
 * //*[@id="__next"]/form/div/div[2]/div
-* //*[text()="English"]
-6. The "Sign in" button
+* //*[contains(@class,"MuiSelect-root")]
+* //*[contains(@data-value,"en")]
+6. sign_in_button_xpath
 * //*[@id="__next"]/form/div/div[2]/button
 * //*[text()="Sign in"]
+* //*[@type="submit"]
 
 ### Subtask 3 - Adding selectors to the project
 Done, as you can check in the files. :wink:
