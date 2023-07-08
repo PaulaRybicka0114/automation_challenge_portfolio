@@ -6,7 +6,7 @@ class LoginPage(BasePage):
     login_field_xpath = "//*[@id='login']"
     password_field_xpath = "//*[@id='password']"
     remind_password_button_xpath = "//child::div/a"
-    change_language_button_xpath = "//*[text()='English']"
+    change_language_button_xpath = "//*/form/div/div[2]/div/input"
     sign_in_button_xpath = "//*[text()='Sign in']"
 
 
