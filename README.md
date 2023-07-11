@@ -53,3 +53,15 @@ Same here. :white_check_mark:
 
 ### Subtask 5 - Adding a new file (match form)
 And here. :white_check_mark:
+
+# TASK 3 - First automatic test and asserts
+
+### Subtask 1 - Completion of login page
+
+### Subtask 2 - New test case
+
+### Subtask 3 - Assert
+
+### Subtask 4 - Repeating what we already know
+
+### Subtask 5 - Optional task
