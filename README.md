@@ -1,6 +1,12 @@
 # Challenge_Portfolio
 
 # TASK 1 - Software configuration
+This task allowed me to:
+* perform exploratory testing of the application
+* find out what software is needed to start automated testing
+* set up my own remote repository on GitHub
+* clone the repository and configure the working environment
+* format the README file
 
 ### Subtask 1 - Why did I choose to participate in the challenge?
 Hi! My name is Paulina and since the beginning of 2023 I am learning to become a QA. I started from manual testing first to get the most important basics. Through the process I got interested in quality assurance sector. After several months of learning both I also noticed that it would be helpful if I could understand programming better. It is very important when you want to provide products of the best quality. This naturally led me to automation testing which connects both.
@@ -15,6 +21,11 @@ Done. :white_check_mark:
 ![image](https://github.com/PaulaRybicka0114/automation_challenge_portfolio/blob/main/Purple%20test%20score.png?raw=true)
 
 # TASK 2 - Selectors
+This assignment allowed me to:
+* learn what selectors are
+* learn how to look for them
+* learn about xPaths syntax
+* understand how to extract the "best" selectors
 
 ### Subtask 1 - A new branch
 Done!
@@ -46,7 +57,7 @@ Done!
 * //*[@type="submit"]
 
 ### Subtask 3 - Adding selectors to the project
-Done, as you can check in the files. :wink:
+Done, feel free to check in files! :wink:
 
 ### Subtask 4 - Adding a new file (dashbord)
 Same here. :white_check_mark:
@@ -55,13 +66,44 @@ Same here. :white_check_mark:
 And here. :white_check_mark:
 
 # TASK 3 - First automatic test and asserts
+This assignment allowed me to:
+* become more familiar with the framework on which challenge is based
+* click on elements on the page
+* fill in fields with text
+* use assert title
+* run a test
 
 ### Subtask 1 - Completion of login page
+In this subtask, I practised creating methods such as filling a field with text and clicking on page elements.
 
 ### Subtask 2 - New test case
+In this subtask, I have created a completely new test case, based on what I have learned in previous tasks.
 
 ### Subtask 3 - Assert
+I have added asserts to my tests.
 
 ### Subtask 4 - Repeating what we already know
+Repetition of what I already know. :slightly_smiling_face:
 
 ### Subtask 5 - Optional task
+I used the assert_element_page method, which compares the current text of the element on the page with the expected text.
+
+# TASK 4 - Refactor, debugger and test cases
+This task allowed me to:
+* perform a code refactor
+* learn how to work with the debugger
+* design and write test cases
+* automate a website on the basis of prepared test cases
+
+### Subtask 1 - Writing test cases
+You can check them in files.
+
+### Subtask 2 - Code writing based on test cases
+Same here.
+
+### Subtask 3 - Adding screencasts of running tests to Google Drive folder
+[Here](https://drive.google.com/drive/folders/1D5-ihJodwfXdP0fAJlziKcpLpiTJibyz?usp=sharing) you can find them. :mag:
+
+### Subtask 4 - Screenshot method and test report
+
+### Subtask 5 - If else construction
