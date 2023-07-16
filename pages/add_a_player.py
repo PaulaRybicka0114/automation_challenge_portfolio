@@ -21,6 +21,7 @@ class AddAPlayer(BasePage):
     height_input_xpath = "//div[6]/div/div/input"
     age_label_xpath = "//label[text()='Age']"
     age_input_xpath = "//div[7]/div/div/input"
+    age_required_label_xpath = "//div[7]/div/p"
     leg_label_xpath = "//label[text()='Leg']"
     leg_input_xpath = "//div[8]/div/div/input"
     club_label_xpath = "//label[text()='Club']"
@@ -35,13 +36,63 @@ class AddAPlayer(BasePage):
     achievements_label_xpath = "//label[text()='Achievements']"
     achievements_input_xpath = "//div[14]/div/div/input"
     add_language_button_xpath = "//div[15]/button"
+    languages_label_xpath = "//label[text()='Languages']"
+    languages_input_xpath = "//div[15]/div/div/div/input"
+    remove_language_button_xpath = "//div[15]/div/button"
     laczy_nas_pilka_label_xpath = "//label[text()='Łączy nas piłka']"
     laczy_nas_pilka_input_xpath = "//div[16]/div/div/input"
-    90_minut_label_xpath = "//label[text()='90 minut']"
-    90_minut_input_xpath = "//div[17]/div/div/input"
+    ninety_minuts_label_xpath = "//label[text()='90 minut']"
+    ninety_minuts_input_xpath = "//div[17]/div/div/input"
     facebook_label_xpath = "//label[text()='Facebook']"
     facebook_input_xpath = "//div[18]/div/div/input"
     add_link_to_youtube_button_xpath = "//div[19]/button"
+    youtube_label_xpath = "//label[text()='YouTube']"
+    youtube_input_xpath = "//div[19]/div/div/div/input"
+    remove_link_to_youtube_button_xpath = "//div[19]/div/button"
     submit_button_xpath = "//*/div[3]/button[1]"
     clear_button_xpath = "//*/div[3]/button[2]"
-pass
+
+    def type_in_email(self, email):
+        self.field_send_keys(self.email_input_xpath, email)
+
+    def type_in_name(self, name):
+        self.field_send_keys(self.name_input_xpath, name)
+
+    def type_in_surname(self, surname):
+        self.field_send_keys(self.surname_input_xpath, surname)
+
+    def type_in_phone(self, phone):
+        self.field_send_keys(self.phone_input_xpath, phone)
+
+    def type_in_weight(self, weight):
+        self.field_send_keys(self.weight_input_xpath, weight)
+
+    def type_in_height(self, height):
+        self.field_send_keys(self.height_input_xpath, height)
+
+    def type_in_club(self, club):
+        self.field_send_keys(self.club_input_xpath, club)
+
+    def type_in_level(self, level):
+        self.field_send_keys(self.level_input_xpath, level)
+
+    def type_in_main_position(self, main_position):
+        self.field_send_keys(self.main_position_input_xpath, main_position)
+
+    def type_in_second_position(self, second_position):
+        self.field_send_keys(self.second_position_input_xpath, second_position)
+
+    def type_in_achievements(self, achievements):
+        self.field_send_keys(self.achievements_input_xpath, achievements)
+
+    def click_on_submit_button(self):
+        self.click_on_the_element(self.submit_button_xpath)
+
+    def wait_for_required(self):
+        self.visibility_of_element_located(self.age_required_label_xpath)
+
+    def click_on_age(self):
+        self.click_on_the_element(self.age_input_xpath)
+
+    def click_clear(self):
+        self.click_on_the_element(self.clear_button_xpath)

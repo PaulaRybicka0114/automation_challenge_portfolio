@@ -1,6 +1,4 @@
 from pages.base_page import BasePage
-
-
 class AddAMatchForm(BasePage):
     header_xpath = "//header"
     main_page_button_xpath = "//*/ul[1]/div[1]"
