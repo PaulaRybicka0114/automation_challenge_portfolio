@@ -39,7 +39,7 @@ class Dashboard(BasePage):
     add_player_form_url = "https://scouts-test.futbolkolektyw.pl/en/players/add"
 
     def title_of_page(self):
-        time.sleep(4)
+        self.wait_for_element_to_be_clickable(self.scouts_panel_img_xpath)
         assert self.get_page_title(self.dashboard_url) == self.expected_title
 
     def click_on_the_add_player(self):

@@ -7,6 +7,7 @@ from selenium import webdriver
 
 from pages.dashboard import Dashboard
 from pages.login_page import LoginPage
+from pages.remind_password import RemindPassword
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
 
@@ -30,7 +31,25 @@ class TestLoginPage(unittest.TestCase):
         user_login.click_on_the_sign_in_button()
         dashboard_page = Dashboard(self.driver)
         dashboard_page.title_of_page()
-        time.sleep(5)
+
+    def test_log_in_to_the_system_incorrect_data(self):
+        user_login = LoginPage(self.driver)
+        user_login.title_of_page()
+        user_login.assert_element_text(self.driver, "//h5", 'Scouts Panel')
+        user_login.type_in_email('user01@getnada.com')
+        user_login.type_in_password('Test-12345')
+        user_login.click_on_the_sign_in_button()
+        user_login.error_info_visible()
+
+    def test_remind_password(self):
+        user_login = LoginPage(self.driver)
+        user_login.title_of_page()
+        user_login.assert_element_text(self.driver, "//h5", 'Scouts Panel')
+        user_login.click_on_the_remind_password_button()
+        remind_password = RemindPassword(self.driver)
+        remind_password.type_in_email('user01@getnada.com')
+        remind_password.click_on_send_button()
+        user_login.message_sent_visible()
 
     @classmethod
     def tearDown(self):
