@@ -13,6 +13,7 @@ class LoginPage(BasePage):
     expected_title = "Scouts panel - sign in"
     login_url = "https://scouts-test.futbolkolektyw.pl/en"
     expected_text = "Scouts Panel"
+    expected_error_info = "Identifier or password invalid."
 
 
     def type_in_email(self, email):
