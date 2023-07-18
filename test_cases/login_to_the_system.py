@@ -1,5 +1,6 @@
 import time
 
+import allure
 from selenium.webdriver.chrome.service import Service
 import os
 import unittest
@@ -40,6 +41,9 @@ class TestLoginPage(unittest.TestCase):
         user_login.type_in_password('Test-12345')
         user_login.click_on_the_sign_in_button()
         user_login.error_info_visible()
+        user_login.assert_element_text(self.driver, "//*[text()='Identifier or password invalid.']", "Identifier or password invalid.")
+        self.driver.save_screenshot('TC_02_Log_in')
+        self.driver.quit()
 
     def test_remind_password(self):
         user_login = LoginPage(self.driver)
@@ -50,6 +54,8 @@ class TestLoginPage(unittest.TestCase):
         remind_password.type_in_email('user01@getnada.com')
         remind_password.click_on_send_button()
         user_login.message_sent_visible()
+        self.driver.save_screenshot('TC_03_Incorrect_login_data')
+        self.driver.quit()
 
     @classmethod
     def tearDown(self):

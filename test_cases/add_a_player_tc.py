@@ -31,7 +31,7 @@ class TestDashboard(unittest.TestCase):
         user_login.click_on_the_sign_in_button()
         dashboard_page = Dashboard(self.driver)
         dashboard_page.click_on_the_add_player()
-        time.sleep(5)
+        self.driver.implicitly_wait(5)
 
     def test_add_player_form(self):
         user_login = LoginPage(self.driver)
@@ -56,6 +56,8 @@ class TestDashboard(unittest.TestCase):
         add_a_player.click_on_age()
         add_a_player.click_on_submit_button()
         add_a_player.wait_for_required()
+        self.driver.save_screenshot('TC_04_Remind_password')
+        self.driver.quit()
 
     def test_clear_form(self):
         user_login = LoginPage(self.driver)
@@ -76,9 +78,9 @@ class TestDashboard(unittest.TestCase):
         add_a_player.type_in_main_position("shooter")
         add_a_player.type_in_second_position("none")
         add_a_player.type_in_achievements("yes")
-        time.sleep(3)
+        self.driver.implicitly_wait(3)
         add_a_player.click_clear()
-        time.sleep(3)
+        self.driver.implicitly_wait(3)
 
 
     @classmethod
