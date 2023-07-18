@@ -1,3 +1,5 @@
+import time
+
 from pages.base_page import BasePage
 
 class AddAPlayer(BasePage):
@@ -23,7 +25,9 @@ class AddAPlayer(BasePage):
     age_input_xpath = "//div[7]/div/div/input"
     age_required_label_xpath = "//div[7]/div/p"
     leg_label_xpath = "//label[text()='Leg']"
-    leg_input_xpath = "//div[8]/div/div/input"
+    leg_dropdown_button = "//*[@id='mui-component-select-leg']"
+    right_leg_xpath = "//div[3]/ul/li[1]"
+    left_leg_xpath = "//div[3]/ul/li[2]"
     club_label_xpath = "//label[text()='Club']"
     club_input_xpath = "//div[9]/div/div/input"
     level_label_xpath = "//label[text()='Level']"
@@ -96,3 +100,11 @@ class AddAPlayer(BasePage):
 
     def click_clear(self):
         self.click_on_the_element(self.clear_button_xpath)
+
+    def select_leg(self, leg):
+        self.click_on_the_element(self.leg_dropdown_button)
+        time.sleep(3)
+        if leg == "right":
+            self.click_on_the_element(self.left_leg_xpath)
+        else:
+            self.click_on_the_element(self.right_leg_xpath)
