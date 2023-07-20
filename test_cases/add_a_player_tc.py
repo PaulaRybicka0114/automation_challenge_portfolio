@@ -56,6 +56,7 @@ class TestDashboard(unittest.TestCase):
         add_a_player.click_on_age()
         add_a_player.click_on_submit_button()
         add_a_player.wait_for_required()
+        add_a_player.assert_element_text(self.driver, "//div[7]/div/p","Required")
         self.driver.save_screenshot('TC_04_Remind_password')
         self.driver.quit()
 

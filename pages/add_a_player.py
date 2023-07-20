@@ -55,6 +55,7 @@ class AddAPlayer(BasePage):
     remove_link_to_youtube_button_xpath = "//div[19]/div/button"
     submit_button_xpath = "//*/div[3]/button[1]"
     clear_button_xpath = "//*/div[3]/button[2]"
+    expected_text = "Required"
 
     def type_in_email(self, email):
         self.field_send_keys(self.email_input_xpath, email)
@@ -108,3 +109,4 @@ class AddAPlayer(BasePage):
             self.click_on_the_element(self.left_leg_xpath)
         else:
             self.click_on_the_element(self.right_leg_xpath)
+
