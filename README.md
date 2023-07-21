@@ -96,14 +96,26 @@ This task allowed me to:
 * automate a website on the basis of prepared test cases
 
 ### Subtask 1 - Writing test cases
-You can check them in files.
+You can check it in [test_cases](test_cases) file.
 
 ### Subtask 2 - Code writing based on test cases
-Same here.
+Same here!
 
 ### Subtask 3 - Adding screencasts of running tests to Google Drive folder
 [Here](https://drive.google.com/drive/folders/1D5-ihJodwfXdP0fAJlziKcpLpiTJibyz?usp=sharing) you can find them. :mag:
 
 ### Subtask 4 - Screenshot method and test report
+You can check it in [test_cases](test_cases) file.
 
 ### Subtask 5 - If else construction
+Same here!
+
+# TASK 5 - Robot Framework
+This task allowed me to:
+* find out what smoke tests are
+* learn how to set up suite test
+* learn about the new framework
+* automatically generate a report
+
+### Subtask 1 - Convert all tests that you performed in the previous task on the Robot Framework
+[Here](https://github.com/PaulaRybicka0114/panelscout_robotframework.git) you can check what I did.
