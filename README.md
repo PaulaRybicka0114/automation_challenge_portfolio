@@ -119,3 +119,19 @@ This task allowed me to:
 
 ### Subtask 1 - Convert all tests that you performed in the previous task on the Robot Framework
 [Here](https://github.com/PaulaRybicka0114/panelscout_robotframework.git) you can check what I did.
+
+# TASK 6 - Bug report and test report
+This task allowed me to:
+* use projects for the only legitimate purpose - catching bugs
+* be familiar with the structure of a properly reported bug
+* become familiar with the structure of test reports
+* create a repository with a functional portfolio in the README file
+
+### Subtask 1 - Change of environment
+Change every link in the project from
+https://scouts-test.futbolkolektyw.pl/en/
+to this
+https://scouts.futbolkolektyw.pl/en/
+### Subtask 2 - Bug report
+### Subtask 3 - Test report
+### Subtask 4 - Create a portfolio
