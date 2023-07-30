@@ -131,7 +131,10 @@ This task allowed me to:
 Change every link in the project from
 https://scouts-test.futbolkolektyw.pl/en/
 to this
-https://scouts.futbolkolektyw.pl/en/
+https://dareit.futbolkolektyw.pl/
 ### Subtask 2 - Bug report
+You can check my short report [here](https://docs.google.com/spreadsheets/d/1xpmDfykQjTAPjWUDkMjW8yKj0qtOXt3qmN0y8wt4QT4/edit?usp=drive_link).
 ### Subtask 3 - Test report
+You can check it [here](https://docs.google.com/document/d/1cfOP8lIohL57nh9vYqMyEPNr9QENP6ThDl3VZ5qbg-s/edit?usp=drive_link).
 ### Subtask 4 - Create a portfolio
+You can check my main portfolio [here](https://github.com/PaulaRybicka0114/Portfolio.git)! 🦉
