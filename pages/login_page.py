@@ -11,7 +11,7 @@ class LoginPage(BasePage):
     error_info_xpath = "//*[text()='Identifier or password invalid.']"
     message_sent_successfully_xpath = "//*[text()='Message sent successfully.']"
     expected_title = "Scouts panel - sign in"
-    login_url = "https://scouts-test.futbolkolektyw.pl/en"
+    login_url = "https://dareit.futbolkolektyw.pl/en/login"
     expected_text = "Scouts Panel"
     expected_error_info = "Identifier or password invalid."
 

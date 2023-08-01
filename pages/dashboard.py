@@ -7,7 +7,7 @@ from pages.base_page import BasePage
 
 class Dashboard(BasePage):
     expected_title = "Scouts panel"
-    dashboard_url = "https://scouts-test.futbolkolektyw.pl/"
+    dashboard_url = "https://dareit.futbolkolektyw.pl/"
     header_xpath = "//header"
     main_page_button_xpath = "//*/ul[1]/div[1]"
     players_button_xpath = "//*/ul[1]/div[2]"
@@ -35,8 +35,7 @@ class Dashboard(BasePage):
     last_updated_report_description_xpath = "//h6[text()='Last updated report']"
     last_updated_report_button_xpath = "//*/div[3]/div/div/a[5]/button"
     expected_title = "Scouts panel"
-    dashboard_url = "https://scouts-test.futbolkolektyw.pl/en"
-    add_player_form_url = "https://scouts-test.futbolkolektyw.pl/en/players/add"
+    add_player_form_url = "https://dareit.futbolkolektyw.pl/en/players/add"
 
     def title_of_page(self):
         self.wait_for_element_to_be_clickable(self.scouts_panel_img_xpath)
