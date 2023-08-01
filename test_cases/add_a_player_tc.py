@@ -13,14 +13,14 @@ from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
 class TestDashboard(unittest.TestCase):
     add_player_button_xpath = "//*/div[2]/div/div/a/button"
-    add_player_form_url = "https://scouts-test.futbolkolektyw.pl/en/players/add"
+    add_player_form_url = "https://dareit.futbolkolektyw.pl/en/players/add"
 
     @classmethod
     def setUp(self):
         os.chmod(DRIVER_PATH, 755)
         self.driver_service = Service(executable_path=DRIVER_PATH)
         self.driver = webdriver.Chrome(service=self.driver_service)
-        self.driver.get('https://scouts-test.futbolkolektyw.pl/en')
+        self.driver.get('https://dareit.futbolkolektyw.pl/en/login')
         self.driver.fullscreen_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
@@ -94,7 +94,7 @@ class TestPlayerForm(unittest.TestCase):
         os.chmod(DRIVER_PATH, 755)
         self.driver_service = Service(executable_path=DRIVER_PATH)
         self.driver = webdriver.Chrome(service=self.driver_service)
-        self.driver.get('https://scouts-test.futbolkolektyw.pl/en')
+        self.driver.get('https://dareit.futbolkolektyw.pl/en/login')
         self.driver.fullscreen_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
